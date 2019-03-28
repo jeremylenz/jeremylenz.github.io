@@ -1,0 +1,54 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+rails_url: https://rubyonrails.org/
+javascript_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+react_url: https://reactjs.org/
+busrate_url: http://bit.ly/busrate_2Uf4HXu
+
+skills:
+  - Ruby
+  - Rails
+  - JavaScript
+  - React
+  - React Router
+  - Redux
+  - MobX
+  - HTML
+  - CSS
+  - CSS Flexbox
+  - CSS Grid
+  - Git
+  - Github
+  - Bitbucket
+  - AWS S3
+  - AWS Elastic Beanstalk
+  - Google Firebase
+  - Sinatra
+  - jQuery
+  - Salesforce.com
+  - Liquid
+  - Jekyll
+  - Shopify
+---
+
+<div class="big-sentence">Hi!</div>
+
+<div class="big-sentence">
+I'm <a href="{{ site.resume-link }}">Jeremy Lenz</a>, NYC-based full stack web developer.
+</div>
+<div class="big-sentence">
+I have experience in <a href="{{ page.rails_url }}">Ruby on Rails</a>, <a href="{{ page.javascript_url }}">JavaScript</a>, and <a href="{{ page.react_url }}">React</a>.  Also a bit of Liquid (Shopify/Jekyll).
+</div>
+<div class="big-sentence">
+My other skills are:
+  {% include skills.html skills=page.skills %}
+</div>
+<div class='big-sentence'>
+My recent personal project is called <a href="{{ page.busrate_url }}">BusRate</a>.
+</div>
+<div class="big-sentence">
+Educational background: jazz piano.  Passion for getting it right and doing work I can be proud of.
+</div>
